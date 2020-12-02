@@ -1,9 +1,11 @@
 {
     "name": "tabspacerselect",
     "displayName": "TabSpacerSelect",
-	"description": "Replace tabs with spaces in selection",
-	"icon": "images/tabspacerselect_icon.png",
-    "version": "0.0.1",
+    "description": "Replace tabs with spaces in selection",
+    "icon": "images/tabspacerselect_icon.png",
+	"publisher": "dlindhurst",
+	"repository":"https://github.com/dlindhurst/tabspacerselect.git",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.51.0"
     },
