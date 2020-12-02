@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
         const selectedText  = editor?.selections;
 		const tabSize : number = editor?.options.tabSize as number ?? 4;
 
-		if (!selectedText) {
+		if (!selectedText || selectedText[0].isEmpty) {
 			vscode.window.showInformationMessage("No text selected.");
 			return;
 		}
