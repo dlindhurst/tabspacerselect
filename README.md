@@ -4,7 +4,7 @@
 
 Replace tabs with spaces in selected text only.
 
-![](images/demo.gif)
+![demo](images/demo.gif)
 
 ### 1.0.0
 
