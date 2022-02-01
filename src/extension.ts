@@ -19,17 +19,17 @@ export function activate(context: vscode.ExtensionContext) {
 				let newSelection = "";
 
 				for (let [index, line] of linesInSelection.entries()) {
-					if (line.length === 0) {
-						continue;
-					}
-					let replacement = "";
+					if (line) {
+						let replacement = "";
 
-					while (line.indexOf("\t") !== -1) {
-						let tabIndex = line.indexOf('\t');
-						let segment = line.substr(0, tabIndex);
-						let tabSpaces = tabSize - (segment.length % tabSize);
-						replacement = segment + ' '.repeat(tabSpaces) + line.substr(tabIndex + 1);
-						line = replacement;
+                        while (line.indexOf("\t") !== -1) {
+                            let tabIndex = line.indexOf("\t");
+                            let segment = line.substring(0, tabIndex);
+                            let tabSpaces = tabSize - (segment.length % tabSize);
+                            replacement =
+                                segment + " ".repeat(tabSpaces) + line.substring(tabIndex + 1);
+                            line = replacement;
+                        }
 					}
 
 					newSelection += line;
