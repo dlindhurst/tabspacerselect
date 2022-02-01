@@ -4,7 +4,7 @@
 
 Replace tabs with spaces in selected text only.
 
-![demo](images/demo.gif)
+![demo](https://github.com/dlindhurst/tabspacerselect/raw/main/images/demo.gif)
 
 ### 1.0.0
 
